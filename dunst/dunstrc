@@ -13,8 +13,8 @@ corner_radius               = 10
 padding                     = 10
 horizontal_padding          = 10
 origin                      = top-right
-offset                      = 20x30
-width                       = 500
+offset                      = 20x20
+width                       = 400
 height                      = 200
 
 
@@ -54,11 +54,11 @@ mouse_left_click            = open_url, close_current, do_action
 # gruvbox 
 
 [urgency_low]
- frame_color                 = "#c08951"
+ frame_color                 = "#689d6a"
  background                  = "#282828"
  foreground                  = "#ebdbb2"
 [urgency_normal]
- frame_color                 = "#c08951"
+ frame_color                 = "#689d6a"
  background                  = "#282828"
  foreground                  = "#ebdbb2"
 [urgency_critical]
@@ -66,5 +66,7 @@ mouse_left_click            = open_url, close_current, do_action
  background                  = "#282828"
  foreground                  = "#ebdbb2"
  timeout                     = 10
-
+[spotify-event]
+    appname = Spotify
+    script = "~/.config/dunst/spotify-event.sh"
 # vim:ft=cfg

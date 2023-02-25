@@ -3,7 +3,7 @@
     "wlr/workspaces",
     "sway/mode",
     "sway/scratchpad",
-    "custom/media"
+    "custom/spotify-metadata"
   ],
   "modules-center": [
     "sway/window"
@@ -14,8 +14,6 @@
     "cpu",
     "memory",
     "temperature",
-    "battery",
-    "battery#bat2",
     "clock",
     "tray"
   ],
@@ -28,59 +26,13 @@
       "unlocked": ""
     }
   },
-  "sway/mode": {
-    "format": "<span style=\"italic\">{}</span>"
-  },
-  "sway/scratchpad": {
-    "format": "{icon} {count}",
-    "show-empty": false,
-    "format-icons": [
-      "",
-      ""
-    ],
-    "tooltip": true,
-    "tooltip-format": "{app}: {title}"
-  },
-  "mpd": {
-    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-    "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-    "unknown-tag": "N/A",
-    "interval": 2,
-    "consume-icons": {
-      "on": " "
-    },
-    "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ",
-      "on": " "
-    },
-    "repeat-icons": {
-      "on": " "
-    },
-    "single-icons": {
-      "on": "1 "
-    },
-    "state-icons": {
-      "paused": "",
-      "playing": ""
-    },
-    "tooltip-format": "MPD (connected)",
-    "tooltip-format-disconnected": "MPD (disconnected)"
-  },
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": "",
-      "deactivated": ""
-    }
-  },
   "tray": {
     "spacing": 10
   },
   "clock": {
-    "timezone": "America/Chicago",
+    "timezone": "Asia/Ho_Chi_Minh",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%a, %d %b, %I:%M %p}"
+    "format": "{:%a %d %b %I:%M %p}"
   },
   "cpu": {
     "format": "{usage}% ",
@@ -161,15 +113,18 @@
     },
     "on-click": "pavucontrol"
   },
-  "custom/media": {
-    "format": "{icon} {}",
+  "custom/spotify-metadata": {
+    "format": "{} {icon}",
+    "format-icons": [""],
+    "max-length": 60,
+    "interval": 30,
     "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
-      "spotify": "",
-      "default": "🎜"
-    },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
-  }
+    "exec": "~/.config/waybar/custom/spotify/metadata.sh",
+    "on-click": "~/.config/waybar/custom/spotify/controls.sh",
+    "on-click-forward": "~/.config/waybar/custom/spotify/controls.sh next",
+    "on-click-backward": "~/.config/waybar/custom/spotify/controls.sh prev",
+    "tooltip": false,
+    "icon": false,
+    "signal": 5
+    }
 }

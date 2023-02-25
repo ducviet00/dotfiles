@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: CaskaydiaCove Nerd Font;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -72,7 +72,11 @@ button:hover {
     background-color: #64727D;
     border-bottom: 3px solid #ffffff;
 }
-
+#custom-spotify-metadata,
+#custom-spotify-play-pause,
+#custom-spotify-prev,
+#custom-spotify-next,
+#custom-spotify-quit,
 #clock,
 #battery,
 #cpu,
@@ -94,7 +98,8 @@ button:hover {
     margin-top: 0.75rem;
     background: #282828; /* rgba(26,26,26,.9); */
     padding: 0 0.75rem;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
+    margin-left: 0.25rem;
 }
 #battery{
     padding-right: 1.75rem;
@@ -109,20 +114,20 @@ button:hover {
     padding-right: 1.25rem;
 }
 #tray{
-    margin-right: .5rem;
+    margin-right: 0rem;
 }
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: .9rem;
+    margin-left: 20px;
 }
 
 .modules-right{
-    margin-right: .70rem;
+    margin-right: 20px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: .9rem;
+    margin-right: 20px;
 }
 
 #clock {
@@ -252,4 +257,30 @@ label:focus {
 
 #scratchpad.empty {
 	background-color: transparent;
+}
+#custom-spotify-metadata, #custom-spotify-play-pause, #custom-spotify-prev, #custom-spotify-next, #custom-spotify-quit {
+    color:              #8ec07c;
+    font-size:          12px;
+}
+
+#custom-spotify-metadata {
+    font-size:          14px;
+}
+#custom-spotify-metadata.playing {
+    color:              #8ec07c;
+}
+#custom-spotify-metadata.paused {
+    color:              #ebdbb2;
+}
+#custom-spotify-prev {
+    margin:             0px 0px 0px 1px;
+}
+#custom-spotify-play-pause {
+    margin:             0px 0px 0px 1px;
+}
+#custom-spotify-next {
+    margin:             0px 0px 0px 1px;
+}
+#custom-spotify-quit {
+    margin:             0px 0px 0px 1px;
 }

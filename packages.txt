@@ -1,0 +1,13 @@
+imv
+grim
+slurp
+waybar-hyprland-git
+wofi
+pkg-config
+swww-git
+swayosd-git
+hyprland-git
+sddm-git
+rustup
+wl-clipboard
+swaylock-effects-git

@@ -13,7 +13,7 @@ corner_radius               = 10
 padding                     = 10
 horizontal_padding          = 10
 origin                      = top-right
-offset                      = 20x20
+offset                      = 22x22
 width                       = 400
 height                      = 200
 
@@ -54,17 +54,17 @@ mouse_left_click            = open_url, close_current, do_action
 # gruvbox 
 
 [urgency_low]
- frame_color                 = "#689d6a"
- background                  = "#282828"
- foreground                  = "#ebdbb2"
+ frame_color                 = "#427b58"
+ background                  = "#fbf1c7"
+ foreground                  = "#3c3836"
 [urgency_normal]
- frame_color                 = "#689d6a"
- background                  = "#282828"
- foreground                  = "#ebdbb2"
+ frame_color                 = "#427b58"
+ background                  = "#fbf1c7"
+ foreground                  = "#3c3836"
 [urgency_critical]
- frame_color                 = "#cc241d"
- background                  = "#282828"
- foreground                  = "#ebdbb2"
+ frame_color                 = "#9d0006"
+ background                  = "#fbf1c7"
+ foreground                  = "#3c3836"
  timeout                     = 10
 [spotify-event]
     appname = Spotify

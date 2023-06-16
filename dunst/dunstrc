@@ -4,7 +4,7 @@ monitor                     = 0
 
 # appearance
 font                        = CaskaydiaCove Nerd Font 10
-frame_width                 = 1
+frame_width                 = 2
 gap_size                    = 10
 transparency                = 50
 separator_height            = 5

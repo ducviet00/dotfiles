@@ -4,7 +4,8 @@ slurp
 waybar-hyprland-git
 wofi
 pkg-config
-swww-git
+hyprpaper
+swayidle
 swayosd-git
 hyprland-git
 sddm-git

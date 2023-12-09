@@ -1,12 +1,7 @@
 {
   "modules-left": [
-    "wlr/workspaces",
-    "sway/mode",
-    "sway/scratchpad",
+    "hyprland/workspaces",
     "custom/spotify-metadata"
-  ],
-  "modules-center": [
-    "sway/window"
   ],
   "modules-right": [
     "pulseaudio",
@@ -15,6 +10,7 @@
     "memory",
     "temperature",
     "clock",
+    "battery",
     "tray"
   ],
   "keyboard-state": {

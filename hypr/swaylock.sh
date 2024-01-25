@@ -1,5 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 swaylock \
+	-f \
 	--color 000000 \
 	--indicator-caps-lock \
 	--indicator-radius 150 \

@@ -10,7 +10,7 @@
     "memory",
     "temperature",
     "clock",
-    "battery",
+    "idle_inhibitor",
     "tray"
   ],
   "keyboard-state": {
@@ -24,6 +24,13 @@
   },
   "tray": {
     "spacing": 10
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": "󰣇"
+    }
   },
   "clock": {
     "timezone": "Asia/Ho_Chi_Minh",

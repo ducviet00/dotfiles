@@ -9,7 +9,6 @@ bash install.sh -a -b
 
 # Install Gruvbox-GTK-Theme
 cd ~
-git clone https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme.git && cd Gruvbox-GTK-Theme
+git clone https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme.git && cd Gruvbox-GTK-Theme/themes
 
-cp -rf themes/* ~/.themes/
-cp -rf themes/Gruvbox-Dark-BL/gtk-4.0 ~/.config/
+sh ./install.sh

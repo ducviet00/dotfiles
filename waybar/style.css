@@ -72,6 +72,7 @@ button:hover {
     background-color: #64727D;
     border-bottom: 3px solid #ffffff;
 }
+#custom-pomodoro,
 #custom-spotify-metadata,
 #custom-spotify-play-pause,
 #custom-spotify-prev,
@@ -95,7 +96,7 @@ button:hover {
 #mpd,
 #window,
 #workspaces {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     background: #282828; /* rgba(26,26,26,.9); */
     padding: 0 0.75rem;
     border-radius: 0.75rem;

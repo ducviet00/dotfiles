@@ -4,6 +4,7 @@
     "custom/spotify-metadata"
   ],
   "modules-right": [
+    "custom/pomodoro",
     "pulseaudio",
     "network",
     "cpu",
@@ -13,6 +14,12 @@
     "idle_inhibitor",
     "tray"
   ],
+  "custom/pomodoro": {
+	  "return-type": "json",
+	  "exec": "waybar-module-pomodoro",
+	  "on-click": "waybar-module-pomodoro toggle",
+	  "on-click-right": "waybar-module-pomodoro reset",
+  },
   "keyboard-state": {
     "numlock": true,
     "capslock": true,

@@ -9,37 +9,50 @@ EnumerateForwardKeys=
 EnumerateBackwardKeys=
 # Skip first input method while enumerating
 EnumerateSkipFirst=False
-# Enumerate Input Method Group Forward
-EnumerateGroupForwardKeys=
-# Enumerate Input Method Group Backward
-EnumerateGroupBackwardKeys=
-# Activate Input Method
-ActivateKeys=
-# Deactivate Input Method
-DeactivateKeys=
-# Default Previous page
-PrevPage=
-# Default Next page
-NextPage=
-# Default Previous Candidate
-PrevCandidate=
-# Default Next Candidate
-NextCandidate=
-# Toggle embedded preedit
-TogglePreedit=
 
 [Hotkey/TriggerKeys]
 0=Control+space
+1=Zenkaku_Hankaku
+2=Hangul
+
+[Hotkey/EnumerateGroupForwardKeys]
+0=Super+space
+
+[Hotkey/EnumerateGroupBackwardKeys]
+0=Shift+Super+space
+
+[Hotkey/ActivateKeys]
+0=Hangul_Hanja
+
+[Hotkey/DeactivateKeys]
+0=Hangul_Romaja
+
+[Hotkey/PrevPage]
+0=Up
+
+[Hotkey/NextPage]
+0=Down
+
+[Hotkey/PrevCandidate]
+0=Shift+Tab
+
+[Hotkey/NextCandidate]
+0=Tab
+
+[Hotkey/TogglePreedit]
+0=Control+Alt+P
 
 [Behavior]
 # Active By Default
 ActiveByDefault=False
+# Reset state on Focus In
+resetStateWhenFocusIn=No
 # Share Input State
 ShareInputState=No
 # Show preedit in application
 PreeditEnabledByDefault=True
 # Show Input Method Information when switch input method
-ShowInputMethodInformation=False
+ShowInputMethodInformation=True
 # Show Input Method Information when changing focus
 showInputMethodInformationWhenFocusIn=False
 # Show compact input method information
